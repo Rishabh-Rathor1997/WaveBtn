@@ -79,7 +79,7 @@ a.liquid:hover{
 
   a {
     position: relative;
-    z-index: 13;
+    z-index: 10;
     display: flex;
     text-decoration: none;
     padding: 20px 20px;
@@ -88,13 +88,13 @@ a.liquid:hover{
     overflow: hidden;
     border-radius: 40px;
     margin: auto;
-   
     align-items: center;
     justify-content: center;
-    box-shadow:   -20px 10px 33px #530c0c,
+     box-shadow:   -20px 10px 33px #530c0c,
     20px -10px 33px #4b0a0a,  20px 10px 33px #550e0e,
     -20px -10px 33px #4b0b0b;
-
+    outline: none; 
+     
   
   
 
@@ -118,6 +118,7 @@ a.liquid:hover{
     height: 200px;
     /* background: #831708; */
     background-image: linear-gradient(90deg, #e62b3b 0%, #7a0e3b 50%, #721649 75%, #860d80 100%);
+    z-index: 10;
     transition: 0.5s;
   }
   
@@ -131,14 +132,14 @@ a.liquid:hover{
     left: 50%;
     transform: translate(-50%, -75%);
     background: #000;
-    z-index: 12;
+    z-index: 10;
   }
   
   a .liquid::before {
     border-radius: 45%;
     background: rgba(20, 20, 20, 1);
     animation: animate 5s infinite;
-    z-index: 13;
+    z-index: 10;
 
   }
   
@@ -148,9 +149,6 @@ a.liquid:hover{
     animation: animate 5s linear infinite alternate  ;
   }
   
-  a.liquid:hover {
-    background: #6d1979;
-  }
   
   @keyframes animate {
     0% {
@@ -167,7 +165,7 @@ a.liquid:hover{
     }
   }
   
-  /* Glowing effect */
+  /* Glowing effect
   a.liquid:hover .liquid::before {
     animation: glow 1s infinite;
   }
@@ -182,7 +180,7 @@ a.liquid:hover{
   }
   
   /* Reflection effect */
-  a.liquid:before {
+  /*a.liquid:before {
     content: '';
     position: absolute;
     top: -10px;
@@ -192,4 +190,4 @@ a.liquid:hover{
     transform: scale(0.7, 0.7);
     background: linear-gradient(to bottom, rgba(211, 199, 199, 0.2), rgba(99, 93, 93, 0.1));
     filter: blur(10px);
-  }
+  } */
